@@ -58,7 +58,7 @@ class Button(Item[V]):
         The style of the button.
     custom_id: Optional[:class:`str`]
         The ID of the button that gets received during an interaction.
-        If this button is for a URL, it does not have a custom ID.
+        If this button is for a URL, it won't have a custom ID.
     url: Optional[:class:`str`]
         The URL this button sends you to.
     disabled: :class:`bool`
@@ -138,7 +138,7 @@ class Button(Item[V]):
     def custom_id(self) -> Optional[str]:
         """Optional[:class:`str`]: The ID of the button that gets received during an interaction.
 
-        If this button is for a URL, it does not have a custom ID.
+        If this button is for a URL, it won't have a custom ID.
         """
         return self._underlying.custom_id
 
